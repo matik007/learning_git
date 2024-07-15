@@ -11,10 +11,27 @@
 - и всякое __такое__
 
 ##### Вот примеры программ
-``` bash
+```bash
 git init    # инициализация
 git add     # добавить 
 git status  # статус
+```
+а тут протестируем код ардуино
+
+```arduino
+digitalWrite(LED_BUILDIN, !digitalRead(LED_BUILDIN));
+delay(500);
+```
+
+тут протестируем стиль мармелад
+
+```mermaid
+graph LR;
+ untracked -- "git add" --> staged;
+ staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+ A --> B;
 ```
 
 Просто оставлю шпаргалку ниже
